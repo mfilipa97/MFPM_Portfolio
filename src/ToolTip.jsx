@@ -6,7 +6,7 @@ const Tooltip = () => {
 
             <section className="tooltip-container">
                 <a
-                    href="https://www.linkedin.com/in/your-profile/"
+                    href="https://www.linkedin.com/in/mfilipa97/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="tooltip-link"
