@@ -1,21 +1,36 @@
-.projects_container {
+.projects-container {
     display: flex;
-    flex-direction: row; /* Default: horizontal layout for children */
-    justify-content: center; /* Centers the cards horizontally inside the container */
-    align-items: center; /* Centers the cards vertically inside the container */
-    min-height: 50vh; /* Ensures the container has enough height for vertical centering */
-    background-color: #f0f0f0; /* Background color */
-    padding: 50px; /* Reduced padding for better alignment */
-    border-radius: 10px; /* Rounded corners for the container */
-    max-width: 90vw; /* Allow container width to scale with viewport */
-    margin: 30px auto; /* Center the container horizontally within the parent */
-    border: 2px dotted #343333; /* Keep the border */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Add spacing between rows */
 }
 
-.card {
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px;
-    max-width: 300px; /* Reduce card width to balance spacing */
-    text-align: center; /* Center-align the text within the card */
-    flex: 1; /* Allows the card to take up available space equally */
+.cards-row {
+    display: flex;
+    flex-direction: row; /* Align cards in a row */
+    flex-wrap: nowrap; /* Prevent row wrapping */
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Add space between cards */
+}
+
+.flex-items {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+}
+
+.cards-row .card {
+    margin: 0 auto; /* Center the card horizontally */
+}
+.auto-typing {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    min-height: 20vh; /* Ensures enough height for vertical alignment */
+    text-align: center; /* Optional: Ensures the text inside is visually centered */
+    margin-bottom: 2rem; /* Adds spacing below the section if needed */
 }

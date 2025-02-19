@@ -24,6 +24,6 @@
 }
 
 .nav_menu li:hover {
-    background-color: rgba(227, 75, 169, 0.4); /* Slight white transparency */
-    backdrop-filter: blur(4px); /* Blur effect */
+    background-color: rgba(208, 208, 208, 0.04); /* Slight white transparency */
+    backdrop-filter: blur(10px); /* Blur effect */
 }

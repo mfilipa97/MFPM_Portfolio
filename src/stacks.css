@@ -1,36 +1,36 @@
-.stacks {
-    display: flex; /* Enables flexbox for the main container */
-    flex-direction: column; /* H1 (title) on top, cards below */
-    justify-content: center; /* Centers the content vertically */
-    align-items: center; /* Centers the content horizontally */
-    min-height: 50vh; /* Ensures the container is at least 50% of the viewport height */
-    background-color: #f0f0f0; /* Background color */
-    padding: 50px; /* Add spacing around the container */
-    border-radius: 10px; /* Rounded corners */
-    max-width: 70%; /* Container width should not exceed viewport width */
-    margin: 30px auto; /* Center the container horizontally */
-    border: 2px dotted #343333; /* Optional border for design */
-    gap: 20px; /* Space between the title and card rows */
-    box-sizing: border-box; /* Padding and border are included in the width/height */
-    overflow: visible; /* Allow content to overflow if necessary */
+.projects-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Add spacing between rows */
 }
 
-.stacks_container {
-    display: flex; /* Flexbox for the stack cards */
-    flex-wrap: wrap; /* Allows cards to wrap to the next line if needed */
-    justify-content: space-evenly; /* Centers the cards horizontally */
-    gap: 20px; /* Space between each card */
-    width: 100%; /* Make the container responsive */
-    max-width: 70vw; /* Limit the container to 70% of the viewport */
-    box-sizing: border-box; /* Prevent padding from affecting width */
-    overflow: visible; /* Ensure cards aren't cut off */
+.cards-row {
+    display: flex;
+    flex-direction: row; /* Align cards in a row */
+    flex-wrap: wrap; /* Prevent row wrapping */
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Add space between cards */
 }
 
-.stacks_card {
-    max-width: 200px; /* Restrict the card width */
-    flex: 1 1 auto; /* Allow cards to scale flexibly */
-    text-align: center; /* Center the contents */
-    padding: 10px; /* Inner spacing */
-    box-sizing: border-box; /* Prevent padding from affecting size */
-    overflow: visible; /* Ensure no content is cut */
+.flex-items {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+}
+
+.cards-row .card {
+    margin: 0 auto; /* Center the card horizontally */
+}
+.auto-typing {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    min-height: 20vh; /* Ensures enough height for vertical alignment */
+    text-align: center; /* Optional: Ensures the text inside is visually centered */
+    margin-bottom: 2rem; /* Adds spacing below the section if needed */
 }

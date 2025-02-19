@@ -68,16 +68,16 @@ const Card = ({ dataCmd, scale = 1 }) => { // Accept the `dataCmd` prop here
 
 
 const StyledWrapper = styled.div`
-    --scale: ${({ scale }) => scale};
+    --scale: ${({scale}) => scale};
+
     .card {
-        padding: calc(1rem * var(--scale));
+        padding: calc(0.1rem * var(--scale));
         overflow: hidden;
         min-width: calc(344px * var(--scale));
         max-width: calc(300px * var(--scale));
-        background-color: #ffffff;
         border-radius: calc(1rem * var(--scale));
-        border-color: #e34ba9;
-        box-shadow: calc(5px * var(--scale)) calc(-5px * var(--scale)) 0px rgb(227, 75, 169);
+        border-color: #f3dfc1;
+        box-shadow: calc(5px * var(--scale)) calc(-5px * var(--scale)) 0px rgb(243, 223, 193);
 
     }
 
@@ -165,8 +165,8 @@ const StyledWrapper = styled.div`
         overflow-x: auto;
         padding: 1rem;
         line-height: 19px;
-        color: white;
-        background-color: black;
+        color: #232323;
+        background-color: rgb(204, 204, 204);
         white-space: nowrap;
     }
 
@@ -187,7 +187,7 @@ const StyledWrapper = styled.div`
     }
 
     .pre code:nth-child(2) {
-        color: #e34ba9;
+        color: #f3dfc1;
     }
 
     .cmd {

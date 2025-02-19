@@ -1,31 +1,29 @@
 import React from 'react';
-import './stacks.css';
+import './projects.css';
+import AutoTyping from "./AutoTyping.jsx";
 import Card from "./Card.jsx";
 
 function Projects() {
     return (
         <div className="stacks">
-            <h1 className="stacks_text">My Stacks</h1> {/* Title */}
-            <div className="stacks_container">
-                <div className="stacks_card">
-                    <Card dataCmd="Javascript" scale={0.70} />
-                </div>
-                <div className="stacks_card">
-                    <Card dataCmd="MERN Stack" scale={0.70} />
-                </div>
-                <div className="stacks_card">
-                    <Card dataCmd="HTML & CSS" scale={0.70} />
-                </div>
-                <div className="stacks_card">
-                    <Card dataCmd="Python" scale={0.70} />
-                </div>
-                <div className="stacks_card">
-                    <Card dataCmd="Welcome_To_My_Portfolio" scale={0.60} />
+            {/* AutoTyping Heading */}
+            <div className="auto-typing">
+                <h1 className="stacks-text">
+                    <AutoTyping text="S  T A C K S" />
+                </h1>
+            </div>
+
+            {/* Container for the Cards */}
+            <div className="stacks-container">
+                <div className="cards-row">
+                    <Card dataCmd="JavaScript & TypeScript" scale={0.90} />
+                    <Card dataCmd="HTML & CSS" scale={0.90} />
+                    <Card dataCmd="MERN STACK" scale={0.90} />
+                    <Card dataCmd="Python" scale={0.90} />
+                    <Card dataCmd="Javascript" scale={0.90} />
                 </div>
             </div>
         </div>
-
-
     );
 }
 
