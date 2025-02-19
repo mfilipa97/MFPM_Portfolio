@@ -1,8 +1,23 @@
-# React + Vite
+# 🚀 Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my **Portfolio** – a dynamic and interactive showcase of my work, skills, and experiences. Built with cutting-edge technologies, this portfolio is designed to impress and inspire. 💻✨
 
-Currently, two official plugins are available:
+## 🌟 Features
+- 🎨 **Sleek & Modern Design** – A visually appealing and responsive layout.
+- 🔥 **Interactive UI** – Smooth animations and intuitive navigation.
+- 🚀 **Project Highlights** – Showcases my best work with detailed descriptions and links.
+- 📜 **About Me** – A glimpse into my journey and expertise.
+- 📬 **Contact Form** – Let’s connect! Easily reach out to me.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- **Frontend**: React, CSS / Styled-Components, JavaScript
+
+## 🚀 Deployment
+This portfolio is **privately hosted** and can be accessed at: 
+[Here](https://marianaportfolio.vercel.app/)
+
+## 📜 License
+This project is licensed under the MIT License.
+
+## 📬 Contact
+Have questions, feedback, or just want to say hi? Reach out via [your email] or connect on [LinkedIn/GitHub]. 🚀
