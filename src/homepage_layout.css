@@ -1,0 +1,72 @@
+.homepage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* Aligns the card vertically in the center */
+    align-items: center; /* Centers the card horizontally */
+    min-height: 50vh; /* Makes the homepage fill the viewport height */
+    background-color: #f0f0f0; /* Background color for your homepage */
+    padding: 100px;
+    border-radius: 10px; /* Rounded corners */
+    max-width: 140vh;
+    margin: 30px auto;
+    border: 2px dotted #343333;
+
+}
+
+.card {
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+.Hello{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 2rem;
+}
+.hey{
+    font-size: 5.2rem;
+    font-weight: 600;
+    color: #e34ba9;
+}
+.name{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.tooltip-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 3vh;
+}
+
+.hey{
+    display: inline-block;
+    font-family: 'Righteous', serif;
+    text-shadow: .03em .03em 0 hsl(0, 1%, 20%);
+}
+.hey:after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: .06em; left: .06em;
+    z-index: -1;
+    text-shadow: none;
+    background-image:
+            linear-gradient(
+                    45deg,
+                    transparent 45%,
+                    hsla(48,20%,90%,1) 45%,
+                    hsla(48,20%,90%,1) 55%,
+                    transparent 0
+            );
+    background-size: .05em .05em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shad-anim 15s linear infinite;
+}
+
+@keyframes shad-anim {
+    0% {background-position: 0 0}
+    0% {background-position: 100% -100%}
+}

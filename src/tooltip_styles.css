@@ -1,0 +1,75 @@
+/* Tooltip container styles */
+.tooltip-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Tooltip wrapper styles */
+.tooltip-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Equivalent to bg-gray-200 */
+    padding: 0.55rem; /* Equivalent to p-1 */
+    transition: all 0.3s ease; /* Equivalent to transition-all */
+    border-radius: 0.7rem;
+    border-color: #e34ba9;
+    box-shadow: 2px -2px 0px rgb(227, 75, 169);
+    position: relative;
+}
+
+/* Tooltip wrapper styles */
+.tooltip-wrapper {
+    position: relative; /* Ensures proper placement of the tooltip text (absolute) */
+    display: inline-block; /* Keeps the wrapper inline for text/icon alignment */
+}
+
+/* Tooltip icon styles */
+.tooltip-icon {
+    display: inline-flex; /* Ensures the link and icon are inline-flex for alignment */
+    justify-content: center;
+    align-items: center; /* Center icon within the link area */
+    width: 1.1rem; /* Icon size (1rem = 16px) */
+    height: 1.1rem; /* Ensure it’s a square */
+    text-decoration: none; /* Removes underline for the link */
+    color: inherit; /* Uses the parent’s text color */
+}
+
+/* Tooltip text styles */
+.tooltip-text {
+    position: absolute; /* Position the tooltip relative to the wrapper */
+    opacity: 0; /* Hide the tooltip by default */
+    transform: translateY(0); /* Default position for the tooltip */
+    transition: opacity 0.7s ease, transform 0.7s ease; /* Smooth visibility and movement transition */
+    top: -2rem; /* Tooltip appears above the icon — adjust as needed */
+    left: 50%; /* Tooltip starts at the middle of the icon */
+    transform: translateX(-50%) translateY(0); /* Center it horizontally and add default Y position */
+    font-size: 0.875rem; /* 14px */
+    color: #343333; /* Text appears in white for readability */
+    padding: 10px 10px; /* Padding around the tooltip text */
+    border-radius: 4px; /* Subtle rounded edges */
+    pointer-events: none; /* Prevents triggering hover on the tooltip itself */
+    white-space: nowrap; /* Prevents breaking onto multiple lines */
+    z-index: 10; /* Ensures tooltip appears above other content */
+}
+
+/* Tooltip hover effect */
+.tooltip-wrapper:hover .tooltip-text {
+    opacity: 1; /* Makes the tooltip visible on hover */
+    transform: translateX(-50%) translateY(-7px); /* Translate up slightly */
+}
+
+/* Optional: Icon hover styling for extra polish */
+.tooltip-icon:hover {
+    color: #0077b5; /* Change the icon or text color if you want (LinkedIn blue example) */
+}
+
+/* Optional: Icon image styling (if using an image) */
+.tooltip-icon img {
+    width: 100%; /* Ensures the image scales properly */
+    height: auto;
+    display: block;
+}

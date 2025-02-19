@@ -1,0 +1,18 @@
+html, body {
+  height: 100%; /* Allow the body to grow with the content */
+  margin: 0; /* Remove any default body margin */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent unnecessary horizontal scrolling */
+}
+
+.container {
+  width: 100%; /* Full width */
+  min-height: 100vh; /* Minimum height for the viewport; allow it to grow with content */
+  --color: #E1E1E1;
+  background-color: #F3F3F3;
+  background-image:
+          linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+          linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+  background-size: 55px 55px;
+  position: relative; /* Allow the container to scroll naturally */
+}

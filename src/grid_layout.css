@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222; /* Default background color */
+
+}
+
+#background-container {
+  position: fixed; /* Sticks the grid to the entire screen */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50px); /* Dynamically fit columns */
+  grid-template-rows: repeat(auto-fit, 50px); /* Dynamically fit rows */
+  pointer-events: none; /* Prevent background from blocking interactions elsewhere */
+}
+
+.grid-item {
+  width: 50px;
+  height: 50px;
+  background-color: #fff; /* Default background color */
+  transition: background-color 0.3s ease; /* Smooth transition between colors */
+}
