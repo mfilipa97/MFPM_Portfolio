@@ -5,7 +5,7 @@
     justify-content: space-evenly; /* Aligns the card vertically in the center */
     align-items: center; /* Centers the card horizontally */
     min-height: 50vh; /* Makes the homepage fill the viewport height */
-    background-color: #f0f0f0; /* Background color for your homepage */
+    background-color: #f1f1ef; /* Background color for your homepage */
     padding: 100px;
     border-radius: 10px; /* Rounded corners */
     max-width: 140vh;

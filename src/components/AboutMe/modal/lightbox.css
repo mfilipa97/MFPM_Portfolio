@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+a,
+a:hover,
+a:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Modal (Lightbox) Styles */
+.lightbox {
+    background: #fffbf1; /* Soft pastel background */
+    padding: 2rem;
+    border: 4px solid #ffa4b6; /* Cute pink border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 5px 5px 0 #ff91a4; /* Fun shadow effect */
+    width: 350px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Centered and hidden initially */
+    transition: transform 0.3s ease-in-out; /* Smooth scale animation */
+    z-index: 1000; /* Ensure it appears on top */
+}
+
+/* Target state for showing the modal */
+.lightbox:target {
+    transform: translate(-50%, -50%) scale(1); /* Scale up and remain centered */
+}
+
+/* Close Button */
+.close-me::after {
+    content: "✕"; /* Use a cuter symbol */
+    display: inline-block;
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    z-index: 3;
+    color: #fff;
+    background-color: #ffa4b6; /* Pink background for the close button */
+    border: 2px solid #ff91a4; /* Cute border matching the modal */
+    border-radius: 50%; /* Circle shape */
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.7rem; /* Adjust alignment inside circle */
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 3px 3px 0 #ff91a4; /* Slight shadow for a 3D effect */
+    transition: transform 0.2s ease-in-out; /* Subtle hover animation */
+}
+
+/* Hover Effect for the Close Button */
+.close-me:hover::after {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    background-color: #ff91a4; /* Change background shade */
+}
+
+/* Hover Effect for Modal */
+.lightbox:hover {
+    box-shadow: 8px 8px 0 #ffa4b6; /* Slightly larger shadow on hover */
+}
+
+/* Links Inside Modal */
+.lightbox a {
+    font-weight: 600;
+    color: #ff91a4;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.lightbox a:hover {
+    color: #ff7294; /* Darker pink on hover */
+}
+
+/* Text Inside Modal */
+.lightbox p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+}

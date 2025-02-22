@@ -1,23 +1,46 @@
+/* Ensure global box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 html, body {
-  height: 100%; /* Allow the body to grow with the content */
-  margin: 0; /* Remove any default body margin */
-  overflow-y: auto; /* Enable vertical scrolling */
-  overflow-x: hidden; /* Prevent unnecessary horizontal scrolling */
+  height: 100%; /* Ensures html and body stretch across the viewport */
+  margin: 0; /* Remove margins */
+  padding: 0; /* Remove padding */
+  overflow-x: hidden; /* Avoid horizontal scrolling */
+}
+
+body {
+  display: flex; /* Allow flexible layout if needed */
+  flex-direction: column;
 }
 
 .container {
   width: 100%; /* Full width */
-  min-height: 100vh; /* Minimum height for the viewport; allow it to grow with content */
+  min-height: 100vh; /* Ensure container fits the viewport */
   --color: #d0d0d0;
   background-color: #f0f0f0;
   background-image:
           linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
           linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
   background-size: 55px 55px;
-  position: relative; /* Allow the container to scroll naturally */
+  position: relative;
+  margin: 0; /* Ensure no extra margin outside container */
 }
 
-/* Small screens (mobile, <768px) */
+/* To account for scrollbar spacing if necessary */
+.container::after {
+  content: ""; /* Empty spacer */
+  display: block;
+  height: 1px; /* No extra space taken */
+  clear: both;
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
   .container {
     background-size: 40px 40px; /* Adjust background for smaller screens */

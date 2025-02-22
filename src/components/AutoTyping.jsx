@@ -36,7 +36,7 @@ const AutoTyping = ({ text = "", typingSpeed = 200, fontSize = "1.5rem" }) => {
         <Wrapper fontSize={fontSize}>
             <div className="typing-container">
                 <span className="text">{displayedText}</span>
-                {cursorVisible && <span className="cursor">|</span>}
+                {cursorVisible && <span className="typing-cursor">|</span>}
             </div>
         </Wrapper>
     );
@@ -51,7 +51,7 @@ const Wrapper = styled.div`
         white-space: nowrap;
     }
 
-    .cursor {
+    .typing-cursor {
         font-weight: bold;
         color: black;
         animation: blink 0.5s step-end infinite;

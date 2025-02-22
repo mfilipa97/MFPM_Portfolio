@@ -1,7 +1,7 @@
 /* Parent container setup */
 .about-container {
     min-height: 10vh;
-    background-color: #f6ece1;
+    background-color: #f0f0f0;
     padding: 5px 100px;
     border-radius: 10px;
     max-width: 140vh;
@@ -86,31 +86,29 @@
 
 .hobbies-section h3 {
     font-size: 1.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: #333;
 }
 
 /* Hobbies Images */
-.hobbies-images {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
 .hobbies-images img {
-    width: 150px;
+    width: 150px; /* Slightly smaller size for a cuter look */
     height: 150px;
-    padding: 5px;
-    border-radius: 8px;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 20px; /* More rounded corners */
     object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #FFF5F7;
+    border: 3px dotted #f593b5; /* Soft pastel border color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transitions for hover effects */
 }
 
 .hobbies-images img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1) rotate(2deg); /* Cute zoom-in and slight tilt effect */
+    border-color: #ff729f; /* Brighter pink on hover */
+    cursor: pointer;
 }
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {

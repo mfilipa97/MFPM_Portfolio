@@ -8,6 +8,7 @@ function HomePage() {
     return (
 
     <div className="homepage">
+
         <div className="Hello">
             {/* Content of the card */}
             <h1 className="hey">Hello!!</h1>
