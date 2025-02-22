@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-const AutoTyping = ({ text = "", typingSpeed = 200 }) => {
+const AutoTyping = ({ text = "", typingSpeed = 200, fontSize = "1.5rem" }) => {
     const [displayedText, setDisplayedText] = useState(""); // State for text being displayed
     const [cursorVisible, setCursorVisible] = useState(true); // State for cursor blink
 
@@ -33,7 +33,7 @@ const AutoTyping = ({ text = "", typingSpeed = 200 }) => {
     }, []);
 
     return (
-        <Wrapper>
+        <Wrapper fontSize={fontSize}>
             <div className="typing-container">
                 <span className="text">{displayedText}</span>
                 {cursorVisible && <span className="cursor">|</span>}
@@ -47,7 +47,7 @@ const Wrapper = styled.div`
         display: inline-block;
         position: relative;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 1.5rem;
+        font-size: ${(props) => props.fontSize}; /* Dynamically using fontSize prop */
         white-space: nowrap;
     }
 

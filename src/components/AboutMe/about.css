@@ -1,0 +1,133 @@
+/* Parent container setup */
+.about-container {
+    min-height: 10vh;
+    background-color: #f6ece1;
+    padding: 5px 100px;
+    border-radius: 10px;
+    max-width: 140vh;
+    margin: 30px auto;
+    border: 2px dotted #2c2b2b;
+}
+
+/* About-me Section */
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 2000px;
+    box-sizing: border-box;
+    min-height: 5vh;
+}
+
+.about-me-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* About Content Styling */
+.about-content-wrapper {
+    width: 50%;
+    font-size: 1.2rem;
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+.hover-underline {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Preserve underline on hover */
+.hover-underline:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #f593b5;
+    transition: width 0.3s ease;
+}
+
+/* Highlight animation */
+.highlight {
+    font-weight: bold;
+    color: #f593b5;
+    animation: flicker 2s infinite; /* Apply animation */
+}
+
+/* Keyframes for flickering */
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1; /* Full visibility */
+    }
+    50% {
+        opacity: 0.5; /* Flicker effect */
+    }
+    70% {
+        opacity: 0.8; /* Slight flicker adjustment */
+    }
+}
+
+/* Hobbies Section */
+.hobbies-section {
+    width: 45%;
+    text-align: center;
+}
+
+.hobbies-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Hobbies Images */
+.hobbies-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hobbies-images img {
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobbies-images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .about-me-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .about-content-wrapper,
+    .hobbies-section {
+        width: 100%;
+        max-width: none;
+    }
+
+    .hobbies-images img {
+        width: 120px;
+        height: 120px;
+    }
+}

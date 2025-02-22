@@ -76,8 +76,8 @@ const StyledWrapper = styled.div`
         min-width: calc(344px * var(--scale));
         max-width: calc(300px * var(--scale));
         border-radius: calc(1rem * var(--scale));
-        border-color: #f3dfc1;
-        box-shadow: calc(5px * var(--scale)) calc(-5px * var(--scale)) 0px rgb(243, 223, 193);
+        border-color: #f593b5;
+        box-shadow: calc(5px * var(--scale)) calc(-5px * var(--scale)) 0px #bf93f5;
 
     }
 
@@ -187,7 +187,7 @@ const StyledWrapper = styled.div`
     }
 
     .pre code:nth-child(2) {
-        color: #f3dfc1;
+        color: #f593b5;
     }
 
     .cmd {

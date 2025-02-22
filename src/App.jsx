@@ -1,11 +1,7 @@
 import './App.css';
-import './index.css'
-import Navbar from "./navbar.jsx";
-import HomePage from "./HomePageComponent.jsx";
-import Dynamic from "./dynamic_grid_animation.jsx";
-import Projects from "./Projects.jsx";
-import Stacks from "./Stacks.jsx";
-
+import Navbar from "./components/Navbar/navbar.jsx";
+import HomePage from "./components/HomePage/HomePageComponent.jsx";
+import About from "./components/AboutMe/About.jsx";
 
 function App() {
     return (
@@ -15,14 +11,7 @@ function App() {
 
                 <Navbar/>
                 <HomePage/>
-                    <Stacks/>
-
-                    <Projects/>
-
-
-
-
-
+                    <About/>
             </div>
 
             </div>
