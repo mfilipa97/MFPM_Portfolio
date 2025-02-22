@@ -2,7 +2,6 @@ import React from 'react';
 import './stacks.css';
 import Card from "./components/Card/Card.jsx";
 import AutoTyping from "./components/AutoTyping.jsx";
-import Card_2 from "./Card_2.jsx";
 
 function Projects() {
     return (

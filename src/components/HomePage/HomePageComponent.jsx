@@ -7,18 +7,18 @@ import AutoTyping from "../AutoTyping.jsx";
 function HomePage() {
     return (
 
-    <div className="homepage">
+        <div className="homepage">
 
-        <div className="Hello">
-            {/* Content of the card */}
-            <h1 className="hey">Hello!!</h1>
-            <div className="name">
-            <AutoTyping text="I  am Mariana!" fontSize="2rem"
-            />
-            </div>
-            <div className="type-js headline">
-            <div className="tooltip-container"><Tooltip/></div>
-        </div>
+            <div className="Hello">
+                {/* Content of the card */}
+                <h1 className="hey">Hello!!</h1>
+                <div className="name">
+                    <AutoTyping text="I  am Mariana!" fontSize="2rem"
+                    />
+                </div>
+                <div className="type-js headline">
+                    <div className="tooltip-container"><Tooltip/></div>
+                </div>
 
 
 
@@ -29,7 +29,7 @@ function HomePage() {
             </div>
 
         </div>
-        );
-        }
+    );
+}
 
-        export default HomePage;
+export default HomePage;

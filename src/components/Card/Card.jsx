@@ -77,7 +77,7 @@ const StyledWrapper = styled.div`
         max-width: calc(300px * var(--scale));
         border-radius: calc(1rem * var(--scale));
         border-color: #f593b5;
-        box-shadow: calc(5px * var(--scale)) calc(-5px * var(--scale)) 0px #bf93f5;
+        box-shadow: calc(5px * var(--scale)) calc(-5px * var(--scale)) 0px #f593b5;
 
     }
 

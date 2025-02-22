@@ -1,8 +1,8 @@
-import './App.css';
 import Navbar from "./components/Navbar/navbar.jsx";
-import HomePage from "./components/HomePage/HomePageComponent.jsx";
 import About from "./components/AboutMe/About.jsx";
 import Projects from "./components/projects/projects.jsx";
+import HomePage from "./components/HomePage/HomePageComponent.jsx";
+import './App.css';
 
 function App() {
     return (
@@ -15,6 +15,7 @@ function App() {
                 <section id="about">
                     <About />
                 </section>
+
                 <section id="projects">
                     <Projects />
                 </section>

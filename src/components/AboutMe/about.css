@@ -1,11 +1,10 @@
 /* Parent container setup */
 .about-container {
-    min-height: 50vh;
     background-color: #f0f0f0;
     padding: 5px 100px;
     border-radius: 10px;
     max-width: 140vh;
-    margin: 50px auto;
+    margin: 100px auto;
     border: 2px dotted #2c2b2b;
 }
 

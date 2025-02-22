@@ -16,8 +16,8 @@
     padding: 0.55rem; /* Equivalent to p-1 */
     transition: all 0.3s ease; /* Equivalent to transition-all */
     border-radius: 0.7rem;
-    border-color: #f3dfc1;
-    box-shadow: 2px -2px 0px rgb(243, 223, 193);
+    border-color: #f593b5;
+    box-shadow: 2px -2px 0px rgb(245, 147, 181);
     position: relative;
 }
 

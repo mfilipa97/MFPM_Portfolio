@@ -3,6 +3,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    margin-bottom: -100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0); /* Fully transparent initially */
+    transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.59); /* Semi-transparent on scroll */
+    backdrop-filter: blur(5px); /* Blur background when scrolled */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow effect */
 }
 
 .nav_menu {
@@ -11,7 +25,9 @@
     gap: 1rem;
     margin: 0;
     padding: 0;
+    background-color: transparent; /* Prevent child elements from hiding transparency */
 }
+
 
 .nav_menu li {
     display: inline-block;
@@ -31,7 +47,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #000000;
+    background-color: #f593b5;
     transition: width 0.3s ease-in-out;
 }
 
