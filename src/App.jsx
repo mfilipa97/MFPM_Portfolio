@@ -6,17 +6,20 @@ import Projects from "./components/projects/projects.jsx";
 
 function App() {
     return (
-        <>
-            <div>
-                <div className="container">
-
-                <Navbar/>
-                <HomePage/>
-                    <About/>
-                    <Projects/>
+        <div>
+            <div className="container">
+                <Navbar />
+                <section id="home">
+                    <HomePage />
+                </section>
+                <section id="about">
+                    <About />
+                </section>
+                <section id="projects">
+                    <Projects />
+                </section>
             </div>
-            </div>
-        </>
+        </div>
     );
 }
 

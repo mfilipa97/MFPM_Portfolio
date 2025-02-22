@@ -6,15 +6,15 @@ const Navbar = () => {
         <div className="navbar">
             <ul className="nav_menu">
                 <li>
-                    <Link to="home" smooth={true} duration={200}>Home</Link>
+                    <Link to="home" smooth={true} duration={100}>Home</Link>
                 </li>
                 <li>
-                    <Link to="about"  smooth={true} duration={200}>About</Link>
+                    <Link to="about"  smooth={true} duration={100}>About</Link>
 
                 </li>
                 <li>Stacks</li>
                 <li>
-                    <Link to="projects" smooth={true} duration={200}>Projects</Link>
+                    <Link to="projects" smooth={true} duration={100}>Projects</Link>
                 </li>
                 <li>Contact Me</li>
             </ul>

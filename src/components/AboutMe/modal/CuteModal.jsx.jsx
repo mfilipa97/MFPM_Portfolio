@@ -9,7 +9,7 @@ export default function CuteModal({ title, description, closeModal }) {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                backgroundColor: 'rgba(0, 0, 0, 0.6)', // Slightly darker overlay
+                backgroundColor: 'rgba(204,204,204,0.66)', // Slightly darker overlay
                 zIndex: 1000,
             }}
         >
@@ -18,10 +18,10 @@ export default function CuteModal({ title, description, closeModal }) {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.8 }}
                 style={{
-                    backgroundColor: '#FFF5F7', // Soft pastel pink
+                    backgroundColor: '#f0f0f0', // Soft pastel pink
                     padding: '30px',
                     borderRadius: '25px', // Rounded corners
-                    border: '4px dotted #FFC1CC', // Dotted border with pink color
+                    border: '4px dotted #232323FF', // Dotted border with pink color
                     boxShadow: '8px 8px 6px rgba(0, 0, 0, 0.2)', // Softer shadow
                     width: '320px',
                     textAlign: 'center',

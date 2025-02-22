@@ -11,7 +11,8 @@ html, body {
   height: 100%; /* Ensures html and body stretch across the viewport */
   margin: 0; /* Remove margins */
   padding: 0; /* Remove padding */
-  overflow-x: hidden; /* Avoid horizontal scrolling */
+  scroll-behavior: smooth;
+
 }
 
 body {

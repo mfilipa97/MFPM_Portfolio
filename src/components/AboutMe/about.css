@@ -1,11 +1,11 @@
 /* Parent container setup */
 .about-container {
-    min-height: 10vh;
+    min-height: 50vh;
     background-color: #f0f0f0;
     padding: 5px 100px;
     border-radius: 10px;
     max-width: 140vh;
-    margin: 30px auto;
+    margin: 50px auto;
     border: 2px dotted #2c2b2b;
 }
 
@@ -64,6 +64,10 @@
     color: #f593b5;
     animation: flicker 2s infinite; /* Apply animation */
 }
+.highlight img {
+    all: unset; /* Reset any inherited styles */
+}
+
 
 /* Keyframes for flickering */
 @keyframes flicker {
