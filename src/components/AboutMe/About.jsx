@@ -6,7 +6,7 @@ import CuteModal from "./modal/CuteModal.jsx";
 // Import SVG assets
 import FoodSvg from "../../assets/img/face-1-svgrepo-com.svg";
 import GamingSvg from "../../assets/img/simulation-svgrepo-com.svg";
-import SleepingSvg from "../../assets/img/sleeping-face-svgrepo-com.svg";
+import SleepingSvg from "../../assets/img/sleeping-woman-svgrepo-com.svg";
 import TravelingSvg from "../../assets/img/suitcase-svgrepo-com.svg";
 import ReadingSvg from "../../assets/img/person-reading-a-book-question-mark-svgrepo-com.svg";
 import ProgrammerSvg from "../../assets/img/female-programmer-upper-body-svgrepo-com.svg";
@@ -115,13 +115,14 @@ const About = () => {
 
                     {/* Hobbies Section */}
                     <div className="hobbies-section">
-                        <h3 className="highlight">
+                        <h3>
                             Hobbies
                             <img
                                 src={HobbyIconSvg}
                                 alt="coding emoji"
-                                style={{ width: "50px", height: "50px", verticalAlign: "middle" }}
+                                style={{ width: "50px", height: "50px", verticalAlign: "middle"}}
                             />
+
                         </h3>
                         <div className="hobbies-images">
                             {/* Render all hobbies as clickable images */}
