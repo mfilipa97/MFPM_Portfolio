@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import CuteModal from "/src/components/AboutMe/modal/CuteModal.jsx";
 import "./navbar.css";
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isModalOpen, setModalOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) { // If scrolled down 50px
+            if (window.scrollY > 50) {
                 setIsScrolled(true);
             } else {
                 setIsScrolled(false);
@@ -20,6 +22,18 @@ const Navbar = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
+    const handleContactClick = () => {
+        setModalOpen(true);
+        document.body.style.overflow = 'hidden'
+
+    };
+
+    const closeModal = () => {
+        setModalOpen(false);
+        document.body.style.overflow = 'unset'
+
+    };
 
     return (
         <div className={`navbar ${isScrolled ? "scrolled" : ""}`}>
@@ -34,8 +48,30 @@ const Navbar = () => {
                 <li>
                     <Link to="projects" smooth={true} duration={100}>Projects</Link>
                 </li>
-                <li>Contact Me</li>
+                <li onClick={handleContactClick} style={{ cursor: "pointer" }}>
+                    Contact Me
+                </li>
             </ul>
+
+            {isModalOpen && (
+                <CuteModal
+                    title="Contact Me"
+                    description="Follow me or send a message through any of the platforms below:"
+                    icons={[
+                        {
+                            src: "/src/assets/img/github.png",
+                            href: "https://linkedin.com/in/mfilipa97",
+                            alt: "LinkedIn",
+                        },
+                        {
+                            src: "/src/assets/img/linkedin-logo.png",
+                            href: "https://github.com/mfilipa97",
+                            alt: "GitHub",
+                        },
+                    ]}
+                    closeModal={closeModal}
+                />
+            )}
         </div>
     );
 };

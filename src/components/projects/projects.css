@@ -1,4 +1,4 @@
-:root{
+:root {
     --background-dark: #2d3548;
     --text-light: rgba(255,255,255,0.6);
     --text-lighter: rgba(255,255,255,0.9);
@@ -13,10 +13,10 @@
 .hero-section {
     align-items: center;
     display: flex;
-    flex-direction: column; /* Stack the title and cards */
+    flex-direction: column;
     justify-content: flex-start;
-    min-height: 10vh;
-    border-radius: 15px; /* Rounds the outer hero section slightly */
+    min-height: 20vh;
+    border-radius: 15px;
     max-width: 140vh;
     margin: 30px auto;
     background-color: #f0f0f0;
@@ -27,69 +27,69 @@
 .hero-title {
     font-size: 3rem;
     text-align: center;
-    margin-bottom: var(--spacing-xl); /* Adds spacing between the title and cards */
+    margin-bottom: var(--spacing-xl);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .card-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: var(--spacing-xl); /* Larger spacing between columns */
-    grid-row-gap: var(--spacing-xl); /* Larger spacing between rows */
+    grid-column-gap: var(--spacing-xl);
+    grid-row-gap: var(--spacing-xl);
     max-width: var(--width-container);
     width: 100%;
 }
 
 @media (min-width: 540px) {
     .card-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 960px) {
     .card-grid {
-        grid-template-columns: repeat(4, 1fr); /* 4 cards per row on larger screens */
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 .projects_card {
     list-style: none;
     position: relative;
-    border-radius: 20px; /* Rounded corners for the cards */
-    overflow: hidden; /* Ensures the border-radius applies to content */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
-    transition: transform 200ms ease-in-out; /* Smooth hover effect */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 200ms ease-in-out;
 }
 
 .projects_card:before {
     content: "";
     display: block;
-    padding-bottom: 150%; /* Maintain the card's aspect ratio */
+    padding-bottom: 150%;
     width: 100%;
 }
 
 .projects_card:hover {
-    transform: scale(1.03); /* Slight zoom effect on hover */
+    transform: scale(1.03);
 }
 
 .card__background {
     background-size: cover;
     background-position: center;
-    filter: brightness(0.75) saturate(1.2) contrast(0.85); /* Keep the existing filter */
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    transition: filter 200ms ease-in-out; /* Improve hover transitions */
+    transition: filter 200ms ease-in-out;
 }
 
 .projects_card:hover .card__background {
-    filter: brightness(1) saturate(1.3); /* Lighten the background on hover */
+    filter: brightness(1) saturate(1.3);
 }
 
 .card-grid:hover > .projects_card:not(:hover) .card__background {
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(10px); /* Dim the background of non-hovered cards */
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(10px);
 }
 
 .card__content {

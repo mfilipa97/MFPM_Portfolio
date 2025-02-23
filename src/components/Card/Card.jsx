@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Card = ({ dataCmd, scale = 1 }) => { // Accept the `dataCmd` prop here
+const Card = ({ dataCmd, scale = 1 }) => {
     return (
         <StyledWrapper scale={scale}
         >
@@ -45,7 +45,6 @@ const Card = ({ dataCmd, scale = 1 }) => { // Accept the `dataCmd` prop here
                             </button>
                         </hgroup>
                         <div className="body">
-                            {/* Pass `dataCmd` dynamically as a data-cmd */}
                             <pre className="pre">
                 {"          "}
                                 <code>-&nbsp;</code>

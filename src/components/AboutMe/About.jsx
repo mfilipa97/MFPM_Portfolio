@@ -59,6 +59,7 @@ const About = () => {
     };
 
     return (
+        <div className="whole-container">
         <div className="about-container">
             <div className="about-me">
                 <AutoTyping text="A bout Me" fontSize="3rem" />
@@ -125,13 +126,13 @@ const About = () => {
 
                         </h3>
                         <div className="hobbies-images">
-                            {/* Render all hobbies as clickable images */}
+
                             {hobbies.map((hobby, index) => (
                                 <img
                                     key={index}
                                     src={hobby.src}
                                     alt={hobby.alt}
-                                    onClick={() => handleImageClick(hobby.alt, hobby.description)} // Open modal on click
+                                    onClick={() => handleImageClick(hobby.alt, hobby.description)}
                                     className="hobby-image"
                                     style={{
                                         width: "150px",
@@ -150,15 +151,17 @@ const About = () => {
                     </div>
                 </div>
             </div>
+        </div>
 
             {/* Modal */}
             {isModalOpen && (
                 <CuteModal
-                    title={modalContent.title}
-                    description={modalContent.description}
-                    closeModal={closeModal} // Pass close function to modal
+                    title={modalContent.title}         // Pass title
+                    description={modalContent.description} // Pass description
+                    closeModal={closeModal}           // Pass close function as before
                 />
             )}
+
         </div>
     );
 };

@@ -2,34 +2,32 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 const AutoTyping = ({ text = "", typingSpeed = 200, fontSize = "1.5rem" }) => {
-    const [displayedText, setDisplayedText] = useState(""); // State for text being displayed
-    const [cursorVisible, setCursorVisible] = useState(true); // State for cursor blink
+    const [displayedText, setDisplayedText] = useState("");
+    const [cursorVisible, setCursorVisible] = useState(true);
 
     useEffect(() => {
-        // Typing effect
         let currentIndex = 0;
-        const safeText = text || ""; // Ensure text is always a string
-        const textArray = safeText.split(""); // Split the text into characters
+        const safeText = text || "";
+        const textArray = safeText.split("");
 
         const typingTimer = setInterval(() => {
             if (currentIndex < textArray.length) {
-                setDisplayedText((prev) => prev + (textArray[currentIndex] || "")); // Add valid characters only
+                setDisplayedText((prev) => prev + (textArray[currentIndex] || ""));
                 currentIndex++;
             } else {
-                clearInterval(typingTimer); // Stop typing when finished
+                clearInterval(typingTimer);
             }
         }, typingSpeed);
 
-        return () => clearInterval(typingTimer); // Cleanup on unmount
-    }, [text, typingSpeed]); // Dependency array ensures effect runs with updated text or typingSpeed
+        return () => clearInterval(typingTimer);
+    }, [text, typingSpeed]);
 
     useEffect(() => {
-        // Cursor blinking effect
         const cursorBlinkTimer = setInterval(() => {
             setCursorVisible((prev) => !prev);
         }, 500);
 
-        return () => clearInterval(cursorBlinkTimer); // Clean up interval on unmount
+        return () => clearInterval(cursorBlinkTimer);
     }, []);
 
     return (
@@ -47,7 +45,7 @@ const Wrapper = styled.div`
         display: inline-block;
         position: relative;
         font-family: 'Courier New', Courier, monospace;
-        font-size: ${(props) => props.fontSize}; /* Dynamically using fontSize prop */
+        font-size: ${(props) => props.fontSize};
         white-space: nowrap;
     }
 

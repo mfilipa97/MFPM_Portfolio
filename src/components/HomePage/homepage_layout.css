@@ -1,20 +1,22 @@
-/* Default Styles (For Larger Screens/Desktop) */
+.homepage-container{
+ padding: 2px;
+}
 .homepage {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; /* Aligns the card vertically in the center */
-    align-items: center; /* Centers the card horizontally */
-    min-height: 50vh; /* Makes the homepage fill the viewport height */
-    background-color: #f1f1ef; /* Background color for your homepage */
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #f1f1ef;
     padding: 100px;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
     max-width: 140vh;
     margin: 100px auto;
     border: 2px dotted #2c2b2b;
 }
 
 .card {
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
     padding: 20px;
     max-width: 400px;
     text-align: center;
@@ -53,7 +55,6 @@
     background-size: 0.05em 0.05em;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     animation: shad-anim 15s linear infinite;
 }
 
@@ -68,7 +69,6 @@
     padding-top: 3vh;
 }
 
-/* Keyframes for Animation */
 @keyframes shad-anim {
     0% {
         background-position: 0 0;
@@ -78,54 +78,50 @@
     }
 }
 
-/* Responsive Design */
-
-/* For Tablet Devices (768px - 1024px) */
 @media (max-width: 1024px) {
     .homepage {
-        padding: 50px; /* Reduced padding for tablets */
-        flex-direction: column; /* Stack elements vertically */
-        min-height: 60vh; /* Adjust height */
+        padding: 50px;
+        flex-direction: column;
+        min-height: 60vh;
     }
 
     .card {
-        max-width: 90%; /* Allow cards to take more space */
+        max-width: 90%;
         padding: 15px;
     }
 
     .Hello {
-        padding-right: 0; /* Center the Hello section */
+        padding-right: 0;
     }
 
     .hey {
-        font-size: 7rem; /* Reduce font size */
+        font-size: 7rem;
     }
 
     .name {
-        font-size: 3rem; /* Reduce font size */
+        font-size: 3rem;
     }
 }
 
-/* For Mobile Devices (<768px) */
 @media (max-width: 768px) {
     .homepage {
-        padding: 20px; /* Further reduce padding */
-        flex-direction: column; /* Keep elements stacked */
-        min-height: 70vh; /* Increase vertical space for scrolling */
+        padding: 20px;
+        flex-direction: column;
+        min-height: 70vh;
     }
 
     .card {
-        max-width: 100%; /* Let the card take the full width */
-        margin: 10px 0; /* Add margins between elements */
+        max-width: 100%;
+        margin: 10px 0;
     }
 
     .Hello {
-        align-items: center; /* Center Hello content */
+        align-items: center;
     }
 
     .hey {
         font-size: 5rem;
-        text-align: center; /* Center text for smaller screens */
+        text-align: center;
     }
 
     .name {
@@ -133,23 +129,22 @@
     }
 
     .tooltip-container {
-        padding-top: 2vh; /* Adjust spacing */
+        padding-top: 2vh;
     }
 }
 
-/* For Extra Small Devices (<480px) */
 @media (max-width: 480px) {
     .homepage {
-        padding: 10px; /* Minimal padding for very small screens */
-        min-height: 80vh; /* Allow flexible height */
+        padding: 10px;
+        min-height: 80vh;
     }
 
     .hey {
-        font-size: 4rem; /* Further reduction in font size */
+        font-size: 4rem;
     }
 
     .name {
-        font-size: 1.5rem; /* Smaller text size */
+        font-size: 1.5rem;
     }
 
     .card {

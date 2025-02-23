@@ -6,7 +6,7 @@ import AutoTyping from "../AutoTyping.jsx";
 
 function HomePage() {
     return (
-
+        <div className="homepage-container">
         <div className="homepage">
 
             <div className="Hello">
@@ -28,6 +28,7 @@ function HomePage() {
 
             </div>
 
+        </div>
         </div>
     );
 }

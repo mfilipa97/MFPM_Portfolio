@@ -14,7 +14,7 @@ export const Projects = () => {
             background: {
                 src: foundFoliage,
             },
-            link: "https://foundfoliage.netlify.app/", // Add a link for this card
+            link: "https://foundfoliage.netlify.app/",
         },
         {
             id: 2,
@@ -23,7 +23,7 @@ export const Projects = () => {
             background: {
                 src: ghostly,
             },
-            link: "https://ghostly-tales.onrender.com/", // Add a link for this card
+            link: "https://ghostly-tales.onrender.com/",
         },
         {
             id: 3,
@@ -32,7 +32,7 @@ export const Projects = () => {
             background: {
                 src: tictac,
             },
-            link: "https://tictactoereact-lyart.vercel.app/", // Add a link for this card
+            link: "https://tictactoereact-lyart.vercel.app/",
         },
         {
             id: 4,
@@ -41,7 +41,7 @@ export const Projects = () => {
             background: {
                 src: foundFoliage,
             },
-            link: "https://example.com/example-card", // Add a link for this card
+            link: "https://example.com/example-card",
         }
     ];
 
@@ -55,9 +55,9 @@ export const Projects = () => {
                     <a
                         key={card.id}
                         className="projects_card"
-                        href={card.link} // Use the 'link' property here
-                        target="_blank" // Open the link in a new tab
-                        rel="noopener noreferrer" // Add security measures for external links
+                        href={card.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <div
                             className="card__background"

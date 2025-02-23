@@ -1,14 +1,16 @@
-/* Parent container setup */
+.whole-container {
+    padding-top: 50px;
+}
+
 .about-container {
     background-color: #f0f0f0;
     padding: 5px 100px;
     border-radius: 10px;
     max-width: 140vh;
-    margin: 100px auto;
+    margin: 50px auto;
     border: 2px dotted #2c2b2b;
 }
 
-/* About-me Section */
 .about-me {
     display: flex;
     flex-direction: column;
@@ -31,7 +33,6 @@
     margin-top: 2rem;
 }
 
-/* About Content Styling */
 .about-content-wrapper {
     width: 50%;
     font-size: 1.2rem;
@@ -45,7 +46,6 @@
     transition: color 0.3s ease;
 }
 
-/* Preserve underline on hover */
 .hover-underline:hover::after {
     content: "";
     position: absolute;
@@ -57,31 +57,28 @@
     transition: width 0.3s ease;
 }
 
-/* Highlight animation */
 .highlight {
     font-weight: bold;
     color: #f593b5;
-    animation: flicker 2s infinite; /* Apply animation */
+    animation: flicker 2s infinite;
 }
+
 .highlight img {
-    all: unset; /* Reset any inherited styles */
+    all: unset;
 }
 
-
-/* Keyframes for flickering */
 @keyframes flicker {
     0%, 100% {
-        opacity: 1; /* Full visibility */
+        opacity: 1;
     }
     50% {
-        opacity: 0.5; /* Flicker effect */
+        opacity: 0.5;
     }
     70% {
-        opacity: 0.8; /* Slight flicker adjustment */
+        opacity: 0.8;
     }
 }
 
-/* Hobbies Section */
 .hobbies-section {
     width: 45%;
     text-align: center;
@@ -93,27 +90,24 @@
     color: #333;
 }
 
-/* Hobbies Images */
 .hobbies-images img {
-    width: 150px; /* Slightly smaller size for a cuter look */
+    width: 150px;
     height: 150px;
     padding: 8px;
     margin: 10px;
-    border-radius: 20px; /* More rounded corners */
+    border-radius: 20px;
     object-fit: cover;
     background-color: #FFF5F7;
-    border: 3px dotted #f593b5; /* Soft pastel border color */
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transitions for hover effects */
+    border: 3px dotted #f593b5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .hobbies-images img:hover {
-    transform: scale(1.1) rotate(2deg); /* Cute zoom-in and slight tilt effect */
-    border-color: #ff729f; /* Brighter pink on hover */
+    transform: scale(1.1) rotate(2deg);
+    border-color: #ff729f;
     cursor: pointer;
 }
 
-
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     .about-me-row {
         flex-direction: column;

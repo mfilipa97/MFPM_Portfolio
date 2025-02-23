@@ -1,5 +1,5 @@
 import React from 'react';
-import './tooltip_styles.css'; // Import the CSS file
+import './tooltip_styles.css';
 
 const Tooltip = () => {
     return (

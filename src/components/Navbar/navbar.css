@@ -9,14 +9,14 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(0, 0, 0, 0); /* Fully transparent initially */
+    background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
 }
 
 .navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.59); /* Semi-transparent on scroll */
-    backdrop-filter: blur(5px); /* Blur background when scrolled */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow effect */
+    background-color: rgba(255, 255, 255, 0.59);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .nav_menu {
@@ -25,7 +25,7 @@
     gap: 1rem;
     margin: 0;
     padding: 0;
-    background-color: transparent; /* Prevent child elements from hiding transparency */
+    background-color: transparent;
 }
 
 
@@ -37,7 +37,6 @@
     cursor: pointer;
     border-radius: 0.5rem;
     position: relative;
-    transition: background-color 0.3s, backdrop-filter 0.3s, color 0.3s;
 }
 
 .nav_menu li::after {
@@ -51,10 +50,23 @@
     transition: width 0.3s ease-in-out;
 }
 
-.nav_menu li:hover {
-    backdrop-filter: blur(10px);
-}
-
 .nav_menu li:hover::after {
     width: 100%;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-media-link img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-media-link img:hover {
+    transform: scale(1.2);
 }
