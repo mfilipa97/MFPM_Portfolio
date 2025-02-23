@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import CuteModal from "/src/components/AboutMe/modal/CuteModal.jsx";
+import githubIcon from "/src/assets/img/github.png"; // Import GitHub icon
+import linkedinIcon from "/src/assets/img/linkedin-logo.png"; // Import LinkedIn icon
 import "./navbar.css";
 
 const Navbar = () => {
@@ -25,14 +27,12 @@ const Navbar = () => {
 
     const handleContactClick = () => {
         setModalOpen(true);
-        document.body.style.overflow = 'hidden'
-
+        document.body.style.overflow = 'hidden';
     };
 
     const closeModal = () => {
         setModalOpen(false);
-        document.body.style.overflow = 'unset'
-
+        document.body.style.overflow = 'unset';
     };
 
     return (
@@ -59,12 +59,12 @@ const Navbar = () => {
                     description="Follow me or send a message through any of the platforms below:"
                     icons={[
                         {
-                            src: "/src/assets/img/github.png",
+                            src: linkedinIcon,
                             href: "https://linkedin.com/in/mfilipa97",
                             alt: "LinkedIn",
                         },
                         {
-                            src: "/src/assets/img/linkedin-logo.png",
+                            src: githubIcon,
                             href: "https://github.com/mfilipa97",
                             alt: "GitHub",
                         },
