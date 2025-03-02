@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  cursor: none;
 }
 
 *, *::before, *::after {
@@ -11,6 +12,7 @@ html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 body {
@@ -53,3 +55,4 @@ body {
     font-size: 0.9rem;
   }
 }
+

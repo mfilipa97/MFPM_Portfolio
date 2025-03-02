@@ -15,8 +15,8 @@ import HobbyIconSvg from "../../assets/img/woman-with-a-cane-svgrepo-com.svg";
 
 
 const About = () => {
-    const [isModalOpen, setModalOpen] = useState(false); // State to manage modal visibility
-    const [modalContent, setModalContent] = useState({ title: "", description: "" }); // State for modal content
+    const [isModalOpen, setModalOpen] = useState(false);
+    const [modalContent, setModalContent] = useState({ title: "", description: "" });
 
     // Hobbies array containing image details and descriptions
     const hobbies = [
@@ -48,14 +48,14 @@ const About = () => {
 
     // Handle image click to open modal with specific title and description
     const handleImageClick = (alt, description) => {
-        setModalContent({ title: alt, description }); // Set modal content dynamically
-        setModalOpen(true); // Open the modal
+        setModalContent({ title: alt, description });
+        setModalOpen(true);
     };
 
     // Close the modal
     const closeModal = () => {
-        setModalContent({ title: "", description: "" }); // Clear modal content
-        setModalOpen(false); // Close the modal
+        setModalContent({ title: "", description: "" });
+        setModalOpen(false);
     };
 
     return (
@@ -156,9 +156,9 @@ const About = () => {
             {/* Modal */}
             {isModalOpen && (
                 <CuteModal
-                    title={modalContent.title}         // Pass title
-                    description={modalContent.description} // Pass description
-                    closeModal={closeModal}           // Pass close function as before
+                    title={modalContent.title}
+                    description={modalContent.description}
+                    closeModal={closeModal}
                 />
             )}
 

@@ -8,6 +8,7 @@
     --spacing-xl: 32px;
     --spacing-xxl: 64px;
     --width-container: 1200px;
+    cursor: none
 }
 
 .hero-section {
